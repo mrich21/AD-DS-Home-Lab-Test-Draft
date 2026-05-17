@@ -61,32 +61,22 @@ Windows Server 2022
 
 ### Organizational Units and Groups
 
-1. In COMPANY-DC01, created Organizational Units “Cranberry” and “Washington” in Active Directory Users and Computers. ![][image7]  
+1. In COMPANY-DC01, created Organizational Units “Cranberry” and “Washington” in Active Directory Users and Computers.![][image7]  
 2. Created “Cranberry Administrators” and “Washington Administrators” security groups in their respective OU’s with universal group scopes.  
 3. Created users “CranberryContractor” and “WashingtonContractor,”and added them to their respective Administrative Groups, as well as a Protected User Group.![][image8]  
-4. Set user accounts “CranberryContractor” and “WashingtonContractor” to expire at the end of 2026\.  
-   ![][image9]  
-5. Configured city attributes to the CranberryContractor and WashingtonContractor user  accounts.  
-   ![][image10]  
-6. Used the Find Users, Contacts, and Groups console to verify the changes. ![][image11]
+4. Set user accounts “CranberryContractor” and “WashingtonContractor” to expire at the end of 2026\.![][image9]  
+5. Configured city attributes to the CranberryContractor and WashingtonContractor user  accounts.![][image10]  
+6. Used the Find Users, Contacts, and Groups console to verify the changes.![][image11]
 
 ### Password Policy Configuration
 
 1. Used the Delegate Control wizard to delegate the ability to reset passwords and force password changes to the Cranberry Administrators group in the Cranberry OU.![][image12]  
-2. Configured password domain policies using the Group Policy Management Editor console.
-
-![][image13]
-
-3. Configured Domain Admin Password Policy in the Active Directory Administrative Center.   
-   ![][image14]  
-     
+2. Configured password domain policies using the Group Policy Management Editor console.![][image13]
+3. Configured Domain Admin Password Policy in the Active Directory Administrative Center.![][image14] 
 4. Enabled Active Directory Recycle bin.![][image15]  
-   
 
 ### Configure Security Settings
 
 1. Restricted NTLM authentication in the Group Policy Management Editor console. Microsoft has deprecated NTLM authentication in favor of Kerberos due to severe vulnerabilities.![][image16]
-
 2. Created GPOs “CranberryOUPolicy” and “WashingtonOUPolicy” and enabled auditing of User Account Management in the Cranberry OU and WashingtonOU.![][image17]  
-3. In the same console, assigned the Cranberry Administrators and Washington Administrators to the “Deny log on as a service” policy to prevent users from running unauthorized processes.   
-   ![][image18]
+3. In the same console, assigned the Cranberry Administrators and Washington Administrators to the “Deny log on as a service” policy to prevent users from running unauthorized processes.![][image18]
