@@ -30,7 +30,8 @@ Windows Server 2022
 ### Initial Setup
 
 1. Enabled Hyper-V on Windows 11\.  
-2. Created a NAT internal switch for communication between server and workstations.![][image1]  
+2. Created a NAT internal switch for communication between server and workstations.<img width="1920" height="1032" alt="image1" src="https://github.com/user-attachments/assets/d604f1c1-1e05-4630-87a8-bb29a6227303" />
+
 3. Downloaded Windows Server 2022 ISO file.
 
 ### Domain Controller 
